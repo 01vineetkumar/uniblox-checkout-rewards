@@ -1,0 +1,1187 @@
+{
+  "testedVia": "Swagger UI Try it out / Execute controls",
+  "startingOrders": 0,
+  "firstOrder": {
+    "cart_id": "6c95cde2-802d-4dcd-8ce6-e7a324910a5d",
+    "coupon_code": null,
+    "created_at": "2026-10-19T21:32:29.047Z",
+    "currency": "USD",
+    "discount_cents": 0,
+    "discount_percent": 0,
+    "gross_cents": 1299,
+    "id": "dcb9f7b2-daed-4eda-80b4-69f942428eee",
+    "items": [
+      {
+        "line_total_cents": 1299,
+        "product_id": "p1",
+        "product_name": "Notebook",
+        "quantity": 1,
+        "unit_price_cents": 1299
+      }
+    ],
+    "net_cents": 1299
+  },
+  "discountedOrder": {
+    "cart_id": "2e3e6d9f-7178-4b07-a84e-2625fcc8fac5",
+    "coupon_code": "REWARD-C2A441F2A4B0482C981A07CAFCCBAEC3",
+    "created_at": "2026-10-19T21:34:12.046Z",
+    "currency": "USD",
+    "discount_cents": 130,
+    "discount_percent": 10,
+    "gross_cents": 1299,
+    "id": "e0f8a798-84d4-4468-a774-2d26719cc351",
+    "items": [
+      {
+        "line_total_cents": 1299,
+        "product_id": "p1",
+        "product_name": "Notebook",
+        "quantity": 1,
+        "unit_price_cents": 1299
+      }
+    ],
+    "net_cents": 1169
+  },
+  "coupon": {
+    "code": "REWARD-C2A441F2A4B0482C981A07CAFCCBAEC3",
+    "created_at": "2026-10-19T21:33:57.441Z",
+    "discount_percent": 10,
+    "milestone": 5,
+    "redeemed_order_id": "e0f8a798-84d4-4468-a774-2d26719cc351"
+  },
+  "pendingCart": "2c44e541-a0f7-4b29-bd24-9796723a24d1",
+  "finalReport": {
+    "coupons": {
+      "available": 0,
+      "generated": 1,
+      "redeemed": 1
+    },
+    "currency": "USD",
+    "discount_cents": 130,
+    "gross_cents": 7794,
+    "net_cents": 7664,
+    "products": [
+      {
+        "product_id": "p1",
+        "quantity": 6
+      },
+      {
+        "product_id": "p2",
+        "quantity": 0
+      },
+      {
+        "product_id": "p3",
+        "quantity": 0
+      },
+      {
+        "product_id": "p4",
+        "quantity": 0
+      },
+      {
+        "product_id": "p5",
+        "quantity": 0
+      }
+    ],
+    "successful_orders": 6
+  },
+  "finalProducts": [
+    {
+      "id": "p1",
+      "inventory": 94,
+      "name": "Notebook",
+      "unit_price_cents": 1299
+    },
+    {
+      "id": "p2",
+      "inventory": 100,
+      "name": "Pen set",
+      "unit_price_cents": 599
+    },
+    {
+      "id": "p3",
+      "inventory": 25,
+      "name": "Desk lamp",
+      "unit_price_cents": 3499
+    },
+    {
+      "id": "p4",
+      "inventory": 50,
+      "name": "Travel mug",
+      "unit_price_cents": 1899
+    },
+    {
+      "id": "p5",
+      "inventory": 1,
+      "name": "Limited edition backpack",
+      "unit_price_cents": 7999
+    }
+  ],
+  "steps": [
+    {
+      "step": "Create first cart",
+      "body": {
+        "created_at": "2026-10-19T21:30:47.696Z",
+        "currency": "USD",
+        "id": "6c95cde2-802d-4dcd-8ce6-e7a324910a5d",
+        "items": [],
+        "order_id": null,
+        "status": "open",
+        "subtotal_cents": 0
+      },
+      "headers": " content-length: 164  content-type: application/json  date: Mon,19 Oct 2026 21:30:47 GMT  server: uvicorn  x-request-id: 2241e110-c76f-40cc-8fba-9d0c1f596187 ",
+      "status": 201
+    },
+    {
+      "step": "Add Notebook",
+      "body": {
+        "created_at": "2026-10-19T21:30:47.696Z",
+        "currency": "USD",
+        "id": "6c95cde2-802d-4dcd-8ce6-e7a324910a5d",
+        "items": [
+          {
+            "inventory": 100,
+            "line_total_cents": 1299,
+            "product_id": "p1",
+            "product_name": "Notebook",
+            "quantity": 1,
+            "unit_price_cents": 1299
+          }
+        ],
+        "order_id": null,
+        "status": "open",
+        "subtotal_cents": 1299
+      },
+      "headers": " content-length: 289  content-type: application/json  date: Mon,19 Oct 2026 21:31:12 GMT  server: uvicorn  x-request-id: 675ea943-3cba-45a4-8d69-6394d257a498 ",
+      "status": 200
+    },
+    {
+      "step": "Change Notebook quantity to two",
+      "body": {
+        "created_at": "2026-10-19T21:30:47.696Z",
+        "currency": "USD",
+        "id": "6c95cde2-802d-4dcd-8ce6-e7a324910a5d",
+        "items": [
+          {
+            "inventory": 100,
+            "line_total_cents": 2598,
+            "product_id": "p1",
+            "product_name": "Notebook",
+            "quantity": 2,
+            "unit_price_cents": 1299
+          }
+        ],
+        "order_id": null,
+        "status": "open",
+        "subtotal_cents": 2598
+      },
+      "headers": " content-length: 289  content-type: application/json  date: Mon,19 Oct 2026 21:31:48 GMT  server: uvicorn  x-request-id: 7b95d7ce-6d4b-4725-9e48-fce4b8eb9b33 ",
+      "status": 200
+    },
+    {
+      "step": "Remove Notebook",
+      "body": {
+        "created_at": "2026-10-19T21:30:47.696Z",
+        "currency": "USD",
+        "id": "6c95cde2-802d-4dcd-8ce6-e7a324910a5d",
+        "items": [],
+        "order_id": null,
+        "status": "open",
+        "subtotal_cents": 0
+      },
+      "headers": " content-length: 164  content-type: application/json  date: Mon,19 Oct 2026 21:32:07 GMT  server: uvicorn  x-request-id: 7910cc83-d389-4463-bc4e-d1a2eb4361a0 ",
+      "status": 200
+    },
+    {
+      "step": "Restore one Notebook",
+      "body": {
+        "created_at": "2026-10-19T21:30:47.696Z",
+        "currency": "USD",
+        "id": "6c95cde2-802d-4dcd-8ce6-e7a324910a5d",
+        "items": [
+          {
+            "inventory": 100,
+            "line_total_cents": 1299,
+            "product_id": "p1",
+            "product_name": "Notebook",
+            "quantity": 1,
+            "unit_price_cents": 1299
+          }
+        ],
+        "order_id": null,
+        "status": "open",
+        "subtotal_cents": 1299
+      },
+      "headers": " content-length: 289  content-type: application/json  date: Mon,19 Oct 2026 21:32:09 GMT  server: uvicorn  x-request-id: 38e73e8b-41af-4c81-991a-f5af3993f0ce ",
+      "status": 200
+    },
+    {
+      "step": "View cart before checkout",
+      "body": {
+        "created_at": "2026-10-19T21:30:47.696Z",
+        "currency": "USD",
+        "id": "6c95cde2-802d-4dcd-8ce6-e7a324910a5d",
+        "items": [
+          {
+            "inventory": 100,
+            "line_total_cents": 1299,
+            "product_id": "p1",
+            "product_name": "Notebook",
+            "quantity": 1,
+            "unit_price_cents": 1299
+          }
+        ],
+        "order_id": null,
+        "status": "open",
+        "subtotal_cents": 1299
+      },
+      "headers": " content-length: 289  content-type: application/json  date: Mon,19 Oct 2026 21:32:13 GMT  server: uvicorn  x-request-id: cad7208a-4cc6-4533-9ee5-1a9f606d8db8 ",
+      "status": 200
+    },
+    {
+      "step": "First checkout",
+      "body": {
+        "cart_id": "6c95cde2-802d-4dcd-8ce6-e7a324910a5d",
+        "coupon_code": null,
+        "created_at": "2026-10-19T21:32:29.047Z",
+        "currency": "USD",
+        "discount_cents": 0,
+        "discount_percent": 0,
+        "gross_cents": 1299,
+        "id": "dcb9f7b2-daed-4eda-80b4-69f942428eee",
+        "items": [
+          {
+            "line_total_cents": 1299,
+            "product_id": "p1",
+            "product_name": "Notebook",
+            "quantity": 1,
+            "unit_price_cents": 1299
+          }
+        ],
+        "net_cents": 1299
+      },
+      "headers": " content-length: 363  content-type: application/json  date: Mon,19 Oct 2026 21:32:27 GMT  idempotency-replayed: false  location: /orders/dcb9f7b2-daed-4eda-80b4-69f942428eee  server: uvicorn  x-request-id: b18c8861-4aae-41ed-a01a-b0efff4c6a87 ",
+      "status": 201
+    },
+    {
+      "step": "Retry first checkout",
+      "body": {
+        "cart_id": "6c95cde2-802d-4dcd-8ce6-e7a324910a5d",
+        "coupon_code": null,
+        "created_at": "2026-10-19T21:32:29.047Z",
+        "currency": "USD",
+        "discount_cents": 0,
+        "discount_percent": 0,
+        "gross_cents": 1299,
+        "id": "dcb9f7b2-daed-4eda-80b4-69f942428eee",
+        "items": [
+          {
+            "line_total_cents": 1299,
+            "product_id": "p1",
+            "product_name": "Notebook",
+            "quantity": 1,
+            "unit_price_cents": 1299
+          }
+        ],
+        "net_cents": 1299
+      },
+      "headers": " content-length: 363  content-type: application/json  date: Mon,19 Oct 2026 21:32:30 GMT  idempotency-replayed: true  location: /orders/dcb9f7b2-daed-4eda-80b4-69f942428eee  server: uvicorn  x-request-id: 22259e37-0e42-479a-bf06-9c0b12a95138 ",
+      "status": 200
+    },
+    {
+      "step": "Retry first checkout again",
+      "body": {
+        "cart_id": "6c95cde2-802d-4dcd-8ce6-e7a324910a5d",
+        "coupon_code": null,
+        "created_at": "2026-10-19T21:32:29.047Z",
+        "currency": "USD",
+        "discount_cents": 0,
+        "discount_percent": 0,
+        "gross_cents": 1299,
+        "id": "dcb9f7b2-daed-4eda-80b4-69f942428eee",
+        "items": [
+          {
+            "line_total_cents": 1299,
+            "product_id": "p1",
+            "product_name": "Notebook",
+            "quantity": 1,
+            "unit_price_cents": 1299
+          }
+        ],
+        "net_cents": 1299
+      },
+      "headers": " content-length: 363  content-type: application/json  date: Mon,19 Oct 2026 21:32:31 GMT  idempotency-replayed: true  location: /orders/dcb9f7b2-daed-4eda-80b4-69f942428eee  server: uvicorn  x-request-id: cbc8be4a-678a-46e2-94f0-188a897de029 ",
+      "status": 200
+    },
+    {
+      "step": "Different key on completed cart",
+      "body": {
+        "error": {
+          "code": "cart_checked_out",
+          "message": "Cart has already been checked out"
+        }
+      },
+      "headers": " content-length: 83  content-type: application/json  date: Mon,19 Oct 2026 21:32:32 GMT  server: uvicorn  x-request-id: 0e988e9f-ac21-446a-90e1-96b09152c2bc ",
+      "status": 409
+    },
+    {
+      "step": "Retrieve first receipt",
+      "body": {
+        "cart_id": "6c95cde2-802d-4dcd-8ce6-e7a324910a5d",
+        "coupon_code": null,
+        "created_at": "2026-10-19T21:32:29.047Z",
+        "currency": "USD",
+        "discount_cents": 0,
+        "discount_percent": 0,
+        "gross_cents": 1299,
+        "id": "dcb9f7b2-daed-4eda-80b4-69f942428eee",
+        "items": [
+          {
+            "line_total_cents": 1299,
+            "product_id": "p1",
+            "product_name": "Notebook",
+            "quantity": 1,
+            "unit_price_cents": 1299
+          }
+        ],
+        "net_cents": 1299
+      },
+      "headers": " content-length: 363  content-type: application/json  date: Mon,19 Oct 2026 21:32:49 GMT  server: uvicorn  x-request-id: abe320d2-8704-401d-8c59-68897f68b502 ",
+      "status": 200
+    },
+    {
+      "step": "Inventory after retries",
+      "body": [
+        {
+          "id": "p1",
+          "inventory": 99,
+          "name": "Notebook",
+          "unit_price_cents": 1299
+        },
+        {
+          "id": "p2",
+          "inventory": 100,
+          "name": "Pen set",
+          "unit_price_cents": 599
+        },
+        {
+          "id": "p3",
+          "inventory": 25,
+          "name": "Desk lamp",
+          "unit_price_cents": 3499
+        },
+        {
+          "id": "p4",
+          "inventory": 50,
+          "name": "Travel mug",
+          "unit_price_cents": 1899
+        },
+        {
+          "id": "p5",
+          "inventory": 1,
+          "name": "Limited edition backpack",
+          "unit_price_cents": 7999
+        }
+      ],
+      "headers": " content-length: 363  content-type: application/json  date: Mon,19 Oct 2026 21:32:57 GMT  server: uvicorn  x-request-id: b59fac26-e8f8-415d-9219-621e793cfc91 ",
+      "status": 200
+    },
+    {
+      "step": "Coupon generation before fifth order",
+      "body": {
+        "error": {
+          "code": "no_eligible_milestone",
+          "message": "No unrewarded milestone is eligible"
+        }
+      },
+      "headers": " content-length: 90  content-type: application/json  date: Mon,19 Oct 2026 21:33:06 GMT  server: uvicorn  x-request-id: cd12952e-5cf8-4731-badf-5860342555f0 ",
+      "status": 409
+    },
+    {
+      "step": "Report after retries",
+      "body": {
+        "coupons": {
+          "available": 0,
+          "generated": 0,
+          "redeemed": 0
+        },
+        "currency": "USD",
+        "discount_cents": 0,
+        "gross_cents": 1299,
+        "net_cents": 1299,
+        "products": [
+          {
+            "product_id": "p1",
+            "quantity": 1
+          },
+          {
+            "product_id": "p2",
+            "quantity": 0
+          },
+          {
+            "product_id": "p3",
+            "quantity": 0
+          },
+          {
+            "product_id": "p4",
+            "quantity": 0
+          },
+          {
+            "product_id": "p5",
+            "quantity": 0
+          }
+        ],
+        "successful_orders": 1
+      },
+      "headers": " content-length: 326  content-type: application/json  date: Mon,19 Oct 2026 21:33:08 GMT  server: uvicorn  x-request-id: bec2028a-9a56-456e-b989-adad9a3bfa91 ",
+      "status": 200
+    },
+    {
+      "step": "Create cart 2",
+      "body": {
+        "created_at": "2026-10-19T21:33:18.579Z",
+        "currency": "USD",
+        "id": "0c1cc9cd-e540-451f-b8bc-ebfe21e170c7",
+        "items": [],
+        "order_id": null,
+        "status": "open",
+        "subtotal_cents": 0
+      },
+      "headers": " content-length: 164  content-type: application/json  date: Mon,19 Oct 2026 21:33:18 GMT  server: uvicorn  x-request-id: b4954ff3-dd85-4168-806a-fe363acc0767 ",
+      "status": 201
+    },
+    {
+      "step": "Add Notebook to cart 2",
+      "body": {
+        "created_at": "2026-10-19T21:33:18.579Z",
+        "currency": "USD",
+        "id": "0c1cc9cd-e540-451f-b8bc-ebfe21e170c7",
+        "items": [
+          {
+            "inventory": 99,
+            "line_total_cents": 1299,
+            "product_id": "p1",
+            "product_name": "Notebook",
+            "quantity": 1,
+            "unit_price_cents": 1299
+          }
+        ],
+        "order_id": null,
+        "status": "open",
+        "subtotal_cents": 1299
+      },
+      "headers": " content-length: 288  content-type: application/json  date: Mon,19 Oct 2026 21:33:19 GMT  server: uvicorn  x-request-id: 44ed6f38-8f15-49b5-8a3b-05dc318c052f ",
+      "status": 200
+    },
+    {
+      "step": "Checkout order 2",
+      "body": {
+        "cart_id": "0c1cc9cd-e540-451f-b8bc-ebfe21e170c7",
+        "coupon_code": null,
+        "created_at": "2026-10-19T21:33:22.344Z",
+        "currency": "USD",
+        "discount_cents": 0,
+        "discount_percent": 0,
+        "gross_cents": 1299,
+        "id": "4b092080-7b56-460a-b9ec-43865f256739",
+        "items": [
+          {
+            "line_total_cents": 1299,
+            "product_id": "p1",
+            "product_name": "Notebook",
+            "quantity": 1,
+            "unit_price_cents": 1299
+          }
+        ],
+        "net_cents": 1299
+      },
+      "headers": " content-length: 363  content-type: application/json  date: Mon,19 Oct 2026 21:33:21 GMT  idempotency-replayed: false  location: /orders/4b092080-7b56-460a-b9ec-43865f256739  server: uvicorn  x-request-id: 8387bc05-9cbf-41f3-a529-05b228fa7e90 ",
+      "status": 201
+    },
+    {
+      "step": "Create cart 3",
+      "body": {
+        "created_at": "2026-10-19T21:33:23.965Z",
+        "currency": "USD",
+        "id": "e4d6dc85-1c49-488d-8fbe-6471fc479b16",
+        "items": [],
+        "order_id": null,
+        "status": "open",
+        "subtotal_cents": 0
+      },
+      "headers": " content-length: 164  content-type: application/json  date: Mon,19 Oct 2026 21:33:23 GMT  server: uvicorn  x-request-id: cd0b8c61-46a8-4359-98a0-56040162ef67 ",
+      "status": 201
+    },
+    {
+      "step": "Add Notebook to cart 3",
+      "body": {
+        "created_at": "2026-10-19T21:33:23.965Z",
+        "currency": "USD",
+        "id": "e4d6dc85-1c49-488d-8fbe-6471fc479b16",
+        "items": [
+          {
+            "inventory": 98,
+            "line_total_cents": 1299,
+            "product_id": "p1",
+            "product_name": "Notebook",
+            "quantity": 1,
+            "unit_price_cents": 1299
+          }
+        ],
+        "order_id": null,
+        "status": "open",
+        "subtotal_cents": 1299
+      },
+      "headers": " content-length: 288  content-type: application/json  date: Mon,19 Oct 2026 21:33:24 GMT  server: uvicorn  x-request-id: 58a5e647-2368-4b03-9e64-ead82eb13ea9 ",
+      "status": 200
+    },
+    {
+      "step": "Checkout order 3",
+      "body": {
+        "cart_id": "e4d6dc85-1c49-488d-8fbe-6471fc479b16",
+        "coupon_code": null,
+        "created_at": "2026-10-19T21:33:27.744Z",
+        "currency": "USD",
+        "discount_cents": 0,
+        "discount_percent": 0,
+        "gross_cents": 1299,
+        "id": "89f6ac58-4059-49c3-9d2f-ccf7be36b4cf",
+        "items": [
+          {
+            "line_total_cents": 1299,
+            "product_id": "p1",
+            "product_name": "Notebook",
+            "quantity": 1,
+            "unit_price_cents": 1299
+          }
+        ],
+        "net_cents": 1299
+      },
+      "headers": " content-length: 363  content-type: application/json  date: Mon,19 Oct 2026 21:33:27 GMT  idempotency-replayed: false  location: /orders/89f6ac58-4059-49c3-9d2f-ccf7be36b4cf  server: uvicorn  x-request-id: 797f3842-8abb-460a-941c-596292ad643e ",
+      "status": 201
+    },
+    {
+      "step": "Create cart 4",
+      "body": {
+        "created_at": "2026-10-19T21:33:29.393Z",
+        "currency": "USD",
+        "id": "78c0323f-2b51-4eb8-8248-593405c431c1",
+        "items": [],
+        "order_id": null,
+        "status": "open",
+        "subtotal_cents": 0
+      },
+      "headers": " content-length: 164  content-type: application/json  date: Mon,19 Oct 2026 21:33:29 GMT  server: uvicorn  x-request-id: 94532220-6b65-4c8a-8c19-d97e0f18c453 ",
+      "status": 201
+    },
+    {
+      "step": "Add Notebook to cart 4",
+      "body": {
+        "created_at": "2026-10-19T21:33:29.393Z",
+        "currency": "USD",
+        "id": "78c0323f-2b51-4eb8-8248-593405c431c1",
+        "items": [
+          {
+            "inventory": 97,
+            "line_total_cents": 1299,
+            "product_id": "p1",
+            "product_name": "Notebook",
+            "quantity": 1,
+            "unit_price_cents": 1299
+          }
+        ],
+        "order_id": null,
+        "status": "open",
+        "subtotal_cents": 1299
+      },
+      "headers": " content-length: 288  content-type: application/json  date: Mon,19 Oct 2026 21:33:30 GMT  server: uvicorn  x-request-id: e724191f-5ff6-4e1b-8165-babea9b86fc6 ",
+      "status": 200
+    },
+    {
+      "step": "Checkout order 4",
+      "body": {
+        "cart_id": "78c0323f-2b51-4eb8-8248-593405c431c1",
+        "coupon_code": null,
+        "created_at": "2026-10-19T21:33:33.261Z",
+        "currency": "USD",
+        "discount_cents": 0,
+        "discount_percent": 0,
+        "gross_cents": 1299,
+        "id": "262ababd-ad13-4f1f-8531-1e8bac123b01",
+        "items": [
+          {
+            "line_total_cents": 1299,
+            "product_id": "p1",
+            "product_name": "Notebook",
+            "quantity": 1,
+            "unit_price_cents": 1299
+          }
+        ],
+        "net_cents": 1299
+      },
+      "headers": " content-length: 363  content-type: application/json  date: Mon,19 Oct 2026 21:33:32 GMT  idempotency-replayed: false  location: /orders/262ababd-ad13-4f1f-8531-1e8bac123b01  server: uvicorn  x-request-id: d4735c77-d9a4-42af-98d8-465bc0997093 ",
+      "status": 201
+    },
+    {
+      "step": "Create cart 5",
+      "body": {
+        "created_at": "2026-10-19T21:33:34.784Z",
+        "currency": "USD",
+        "id": "5e94b2d1-1174-4cc1-ae1a-92493f4834c6",
+        "items": [],
+        "order_id": null,
+        "status": "open",
+        "subtotal_cents": 0
+      },
+      "headers": " content-length: 164  content-type: application/json  date: Mon,19 Oct 2026 21:33:33 GMT  server: uvicorn  x-request-id: 302fc935-f29a-4e15-948e-fd7602ee18fa ",
+      "status": 201
+    },
+    {
+      "step": "Add Notebook to cart 5",
+      "body": {
+        "created_at": "2026-10-19T21:33:34.784Z",
+        "currency": "USD",
+        "id": "5e94b2d1-1174-4cc1-ae1a-92493f4834c6",
+        "items": [
+          {
+            "inventory": 96,
+            "line_total_cents": 1299,
+            "product_id": "p1",
+            "product_name": "Notebook",
+            "quantity": 1,
+            "unit_price_cents": 1299
+          }
+        ],
+        "order_id": null,
+        "status": "open",
+        "subtotal_cents": 1299
+      },
+      "headers": " content-length: 288  content-type: application/json  date: Mon,19 Oct 2026 21:33:35 GMT  server: uvicorn  x-request-id: 0e5a9f18-98ed-401c-b30e-50894fb68177 ",
+      "status": 200
+    },
+    {
+      "step": "Checkout order 5",
+      "body": {
+        "cart_id": "5e94b2d1-1174-4cc1-ae1a-92493f4834c6",
+        "coupon_code": null,
+        "created_at": "2026-10-19T21:33:38.681Z",
+        "currency": "USD",
+        "discount_cents": 0,
+        "discount_percent": 0,
+        "gross_cents": 1299,
+        "id": "fcf810e3-3f77-42c8-9261-081cbb925154",
+        "items": [
+          {
+            "line_total_cents": 1299,
+            "product_id": "p1",
+            "product_name": "Notebook",
+            "quantity": 1,
+            "unit_price_cents": 1299
+          }
+        ],
+        "net_cents": 1299
+      },
+      "headers": " content-length: 363  content-type: application/json  date: Mon,19 Oct 2026 21:33:38 GMT  idempotency-replayed: false  location: /orders/fcf810e3-3f77-42c8-9261-081cbb925154  server: uvicorn  x-request-id: ca8464d6-f596-4612-ac91-0e4b59395eb3 ",
+      "status": 201
+    },
+    {
+      "step": "Report at milestone five",
+      "body": {
+        "coupons": {
+          "available": 0,
+          "generated": 0,
+          "redeemed": 0
+        },
+        "currency": "USD",
+        "discount_cents": 0,
+        "gross_cents": 6495,
+        "net_cents": 6495,
+        "products": [
+          {
+            "product_id": "p1",
+            "quantity": 5
+          },
+          {
+            "product_id": "p2",
+            "quantity": 0
+          },
+          {
+            "product_id": "p3",
+            "quantity": 0
+          },
+          {
+            "product_id": "p4",
+            "quantity": 0
+          },
+          {
+            "product_id": "p5",
+            "quantity": 0
+          }
+        ],
+        "successful_orders": 5
+      },
+      "headers": " content-length: 326  content-type: application/json  date: Mon,19 Oct 2026 21:33:40 GMT  server: uvicorn  x-request-id: 1cb05eed-538d-417c-8932-ec80cd3d1045 ",
+      "status": 200
+    },
+    {
+      "step": "Generate milestone-five coupon",
+      "body": {
+        "code": "REWARD-C2A441F2A4B0482C981A07CAFCCBAEC3",
+        "created_at": "2026-10-19T21:33:57.441Z",
+        "discount_percent": 10,
+        "milestone": 5,
+        "redeemed_order_id": null
+      },
+      "headers": " content-length: 151  content-type: application/json  date: Mon,19 Oct 2026 21:33:56 GMT  server: uvicorn  x-request-id: 3878703c-e910-4502-8929-a99e0f48d899 ",
+      "status": 201
+    },
+    {
+      "step": "Prevent duplicate milestone coupon",
+      "body": {
+        "error": {
+          "code": "no_eligible_milestone",
+          "message": "No unrewarded milestone is eligible"
+        }
+      },
+      "headers": " content-length: 90  content-type: application/json  date: Mon,19 Oct 2026 21:33:58 GMT  server: uvicorn  x-request-id: 05982c9b-011e-497c-a401-cf1d58d10f5a ",
+      "status": 409
+    },
+    {
+      "step": "Inspect available coupon",
+      "body": [
+        {
+          "code": "REWARD-C2A441F2A4B0482C981A07CAFCCBAEC3",
+          "created_at": "2026-10-19T21:33:57.441Z",
+          "discount_percent": 10,
+          "milestone": 5,
+          "redeemed_order_id": null
+        }
+      ],
+      "headers": " content-length: 153  content-type: application/json  date: Mon,19 Oct 2026 21:34:05 GMT  server: uvicorn  x-request-id: 25ecd71a-4bd5-4dbd-9898-13b5125931e2 ",
+      "status": 200
+    },
+    {
+      "step": "Create discounted cart",
+      "body": {
+        "created_at": "2026-10-19T21:34:07.761Z",
+        "currency": "USD",
+        "id": "2e3e6d9f-7178-4b07-a84e-2625fcc8fac5",
+        "items": [],
+        "order_id": null,
+        "status": "open",
+        "subtotal_cents": 0
+      },
+      "headers": " content-length: 164  content-type: application/json  date: Mon,19 Oct 2026 21:34:07 GMT  server: uvicorn  x-request-id: 4deb83f8-dce8-419a-8c75-a8eb3790b805 ",
+      "status": 201
+    },
+    {
+      "step": "Add Notebook for discount",
+      "body": {
+        "created_at": "2026-10-19T21:34:07.761Z",
+        "currency": "USD",
+        "id": "2e3e6d9f-7178-4b07-a84e-2625fcc8fac5",
+        "items": [
+          {
+            "inventory": 95,
+            "line_total_cents": 1299,
+            "product_id": "p1",
+            "product_name": "Notebook",
+            "quantity": 1,
+            "unit_price_cents": 1299
+          }
+        ],
+        "order_id": null,
+        "status": "open",
+        "subtotal_cents": 1299
+      },
+      "headers": " content-length: 288  content-type: application/json  date: Mon,19 Oct 2026 21:34:08 GMT  server: uvicorn  x-request-id: 0994934e-6127-4dec-a8a4-803de8705b12 ",
+      "status": 200
+    },
+    {
+      "step": "Redeem 10 percent coupon",
+      "body": {
+        "cart_id": "2e3e6d9f-7178-4b07-a84e-2625fcc8fac5",
+        "coupon_code": "REWARD-C2A441F2A4B0482C981A07CAFCCBAEC3",
+        "created_at": "2026-10-19T21:34:12.046Z",
+        "currency": "USD",
+        "discount_cents": 130,
+        "discount_percent": 10,
+        "gross_cents": 1299,
+        "id": "e0f8a798-84d4-4468-a774-2d26719cc351",
+        "items": [
+          {
+            "line_total_cents": 1299,
+            "product_id": "p1",
+            "product_name": "Notebook",
+            "quantity": 1,
+            "unit_price_cents": 1299
+          }
+        ],
+        "net_cents": 1169
+      },
+      "headers": " content-length: 403  content-type: application/json  date: Mon,19 Oct 2026 21:34:11 GMT  idempotency-replayed: false  location: /orders/e0f8a798-84d4-4468-a774-2d26719cc351  server: uvicorn  x-request-id: fa698dc9-aaa7-4d6c-bc52-b2228f1e20ff ",
+      "status": 201
+    },
+    {
+      "step": "Retry discounted checkout",
+      "body": {
+        "cart_id": "2e3e6d9f-7178-4b07-a84e-2625fcc8fac5",
+        "coupon_code": "REWARD-C2A441F2A4B0482C981A07CAFCCBAEC3",
+        "created_at": "2026-10-19T21:34:12.046Z",
+        "currency": "USD",
+        "discount_cents": 130,
+        "discount_percent": 10,
+        "gross_cents": 1299,
+        "id": "e0f8a798-84d4-4468-a774-2d26719cc351",
+        "items": [
+          {
+            "line_total_cents": 1299,
+            "product_id": "p1",
+            "product_name": "Notebook",
+            "quantity": 1,
+            "unit_price_cents": 1299
+          }
+        ],
+        "net_cents": 1169
+      },
+      "headers": " content-length: 403  content-type: application/json  date: Mon,19 Oct 2026 21:34:13 GMT  idempotency-replayed: true  location: /orders/e0f8a798-84d4-4468-a774-2d26719cc351  server: uvicorn  x-request-id: 4bf80bfd-99e8-42ee-8889-b6d3c4b28730 ",
+      "status": 200
+    },
+    {
+      "step": "Create cart for rejected coupon reuse",
+      "body": {
+        "created_at": "2026-10-19T21:34:37.845Z",
+        "currency": "USD",
+        "id": "2c44e541-a0f7-4b29-bd24-9796723a24d1",
+        "items": [],
+        "order_id": null,
+        "status": "open",
+        "subtotal_cents": 0
+      },
+      "headers": " content-length: 164  content-type: application/json  date: Mon,19 Oct 2026 21:34:37 GMT  server: uvicorn  x-request-id: 5763e21a-bab7-4d23-bb00-55f2d49770a8 ",
+      "status": 201
+    },
+    {
+      "step": "Add item to seventh cart",
+      "body": {
+        "created_at": "2026-10-19T21:34:37.845Z",
+        "currency": "USD",
+        "id": "2c44e541-a0f7-4b29-bd24-9796723a24d1",
+        "items": [
+          {
+            "inventory": 94,
+            "line_total_cents": 1299,
+            "product_id": "p1",
+            "product_name": "Notebook",
+            "quantity": 1,
+            "unit_price_cents": 1299
+          }
+        ],
+        "order_id": null,
+        "status": "open",
+        "subtotal_cents": 1299
+      },
+      "headers": " content-length: 288  content-type: application/json  date: Mon,19 Oct 2026 21:34:39 GMT  server: uvicorn  x-request-id: 9a86c4e2-202b-44ae-b9bf-5e051850b9bc ",
+      "status": 200
+    },
+    {
+      "step": "Reject old key on a different cart",
+      "body": {
+        "error": {
+          "code": "idempotency_conflict",
+          "message": "Key was used for another request"
+        }
+      },
+      "headers": " content-length: 86  content-type: application/json  date: Mon,19 Oct 2026 21:34:41 GMT  server: uvicorn  x-request-id: e7c5b8fc-4c2f-4317-b788-e2e1b9099090 ",
+      "status": 409
+    },
+    {
+      "step": "Reject coupon reuse on a new cart",
+      "body": {
+        "error": {
+          "code": "coupon_redeemed",
+          "message": "Coupon has already been redeemed"
+        }
+      },
+      "headers": " content-length: 81  content-type: application/json  date: Mon,19 Oct 2026 21:34:43 GMT  server: uvicorn  x-request-id: 7f5d6ca0-bb91-4ad5-9587-3db716528deb ",
+      "status": 409
+    },
+    {
+      "step": "Failed coupon checkout leaves cart open",
+      "body": {
+        "created_at": "2026-10-19T21:34:37.845Z",
+        "currency": "USD",
+        "id": "2c44e541-a0f7-4b29-bd24-9796723a24d1",
+        "items": [
+          {
+            "inventory": 94,
+            "line_total_cents": 1299,
+            "product_id": "p1",
+            "product_name": "Notebook",
+            "quantity": 1,
+            "unit_price_cents": 1299
+          }
+        ],
+        "order_id": null,
+        "status": "open",
+        "subtotal_cents": 1299
+      },
+      "headers": " content-length: 288  content-type: application/json  date: Mon,19 Oct 2026 21:34:47 GMT  server: uvicorn  x-request-id: 4ca93811-2b50-4eb1-930b-cfe5e8a25373 ",
+      "status": 200
+    },
+    {
+      "step": "Verify final inventory",
+      "body": [
+        {
+          "id": "p1",
+          "inventory": 94,
+          "name": "Notebook",
+          "unit_price_cents": 1299
+        },
+        {
+          "id": "p2",
+          "inventory": 100,
+          "name": "Pen set",
+          "unit_price_cents": 599
+        },
+        {
+          "id": "p3",
+          "inventory": 25,
+          "name": "Desk lamp",
+          "unit_price_cents": 3499
+        },
+        {
+          "id": "p4",
+          "inventory": 50,
+          "name": "Travel mug",
+          "unit_price_cents": 1899
+        },
+        {
+          "id": "p5",
+          "inventory": 1,
+          "name": "Limited edition backpack",
+          "unit_price_cents": 7999
+        }
+      ],
+      "headers": " content-length: 363  content-type: application/json  date: Mon,19 Oct 2026 21:34:49 GMT  server: uvicorn  x-request-id: bf451c6b-9f57-457f-9b00-8ba09eb55d68 ",
+      "status": 200
+    },
+    {
+      "step": "Verify coupon linked to discounted order",
+      "body": [
+        {
+          "code": "REWARD-C2A441F2A4B0482C981A07CAFCCBAEC3",
+          "created_at": "2026-10-19T21:33:57.441Z",
+          "discount_percent": 10,
+          "milestone": 5,
+          "redeemed_order_id": "e0f8a798-84d4-4468-a774-2d26719cc351"
+        }
+      ],
+      "headers": " content-length: 187  content-type: application/json  date: Mon,19 Oct 2026 21:35:00 GMT  server: uvicorn  x-request-id: 295c0dbd-d9db-4072-b864-6d713f918719 ",
+      "status": 200
+    },
+    {
+      "step": "Retrieve six authoritative orders",
+      "body": [
+        {
+          "cart_id": "6c95cde2-802d-4dcd-8ce6-e7a324910a5d",
+          "coupon_code": null,
+          "created_at": "2026-10-19T21:32:29.047Z",
+          "currency": "USD",
+          "discount_cents": 0,
+          "discount_percent": 0,
+          "gross_cents": 1299,
+          "id": "dcb9f7b2-daed-4eda-80b4-69f942428eee",
+          "items": [
+            {
+              "line_total_cents": 1299,
+              "product_id": "p1",
+              "product_name": "Notebook",
+              "quantity": 1,
+              "unit_price_cents": 1299
+            }
+          ],
+          "net_cents": 1299
+        },
+        {
+          "cart_id": "0c1cc9cd-e540-451f-b8bc-ebfe21e170c7",
+          "coupon_code": null,
+          "created_at": "2026-10-19T21:33:22.344Z",
+          "currency": "USD",
+          "discount_cents": 0,
+          "discount_percent": 0,
+          "gross_cents": 1299,
+          "id": "4b092080-7b56-460a-b9ec-43865f256739",
+          "items": [
+            {
+              "line_total_cents": 1299,
+              "product_id": "p1",
+              "product_name": "Notebook",
+              "quantity": 1,
+              "unit_price_cents": 1299
+            }
+          ],
+          "net_cents": 1299
+        },
+        {
+          "cart_id": "e4d6dc85-1c49-488d-8fbe-6471fc479b16",
+          "coupon_code": null,
+          "created_at": "2026-10-19T21:33:27.744Z",
+          "currency": "USD",
+          "discount_cents": 0,
+          "discount_percent": 0,
+          "gross_cents": 1299,
+          "id": "89f6ac58-4059-49c3-9d2f-ccf7be36b4cf",
+          "items": [
+            {
+              "line_total_cents": 1299,
+              "product_id": "p1",
+              "product_name": "Notebook",
+              "quantity": 1,
+              "unit_price_cents": 1299
+            }
+          ],
+          "net_cents": 1299
+        },
+        {
+          "cart_id": "78c0323f-2b51-4eb8-8248-593405c431c1",
+          "coupon_code": null,
+          "created_at": "2026-10-19T21:33:33.261Z",
+          "currency": "USD",
+          "discount_cents": 0,
+          "discount_percent": 0,
+          "gross_cents": 1299,
+          "id": "262ababd-ad13-4f1f-8531-1e8bac123b01",
+          "items": [
+            {
+              "line_total_cents": 1299,
+              "product_id": "p1",
+              "product_name": "Notebook",
+              "quantity": 1,
+              "unit_price_cents": 1299
+            }
+          ],
+          "net_cents": 1299
+        },
+        {
+          "cart_id": "5e94b2d1-1174-4cc1-ae1a-92493f4834c6",
+          "coupon_code": null,
+          "created_at": "2026-10-19T21:33:38.681Z",
+          "currency": "USD",
+          "discount_cents": 0,
+          "discount_percent": 0,
+          "gross_cents": 1299,
+          "id": "fcf810e3-3f77-42c8-9261-081cbb925154",
+          "items": [
+            {
+              "line_total_cents": 1299,
+              "product_id": "p1",
+              "product_name": "Notebook",
+              "quantity": 1,
+              "unit_price_cents": 1299
+            }
+          ],
+          "net_cents": 1299
+        },
+        {
+          "cart_id": "2e3e6d9f-7178-4b07-a84e-2625fcc8fac5",
+          "coupon_code": "REWARD-C2A441F2A4B0482C981A07CAFCCBAEC3",
+          "created_at": "2026-10-19T21:34:12.046Z",
+          "currency": "USD",
+          "discount_cents": 130,
+          "discount_percent": 10,
+          "gross_cents": 1299,
+          "id": "e0f8a798-84d4-4468-a774-2d26719cc351",
+          "items": [
+            {
+              "line_total_cents": 1299,
+              "product_id": "p1",
+              "product_name": "Notebook",
+              "quantity": 1,
+              "unit_price_cents": 1299
+            }
+          ],
+          "net_cents": 1169
+        }
+      ],
+      "headers": " content-length: 2225  content-type: application/json  date: Mon,19 Oct 2026 21:35:07 GMT  server: uvicorn  x-request-id: 4970b32e-e8e9-4376-b7ae-34dbc10fea3c ",
+      "status": 200
+    },
+    {
+      "step": "Final reconciled report",
+      "body": {
+        "coupons": {
+          "available": 0,
+          "generated": 1,
+          "redeemed": 1
+        },
+        "currency": "USD",
+        "discount_cents": 130,
+        "gross_cents": 7794,
+        "net_cents": 7664,
+        "products": [
+          {
+            "product_id": "p1",
+            "quantity": 6
+          },
+          {
+            "product_id": "p2",
+            "quantity": 0
+          },
+          {
+            "product_id": "p3",
+            "quantity": 0
+          },
+          {
+            "product_id": "p4",
+            "quantity": 0
+          },
+          {
+            "product_id": "p5",
+            "quantity": 0
+          }
+        ],
+        "successful_orders": 6
+      },
+      "headers": " content-length: 328  content-type: application/json  date: Mon,19 Oct 2026 21:35:10 GMT  server: uvicorn  x-request-id: b6e5f0dc-6d06-4e72-bf7e-53beb8bafa74 ",
+      "status": 200
+    },
+    {
+      "step": "Repeat report without state changes",
+      "body": {
+        "coupons": {
+          "available": 0,
+          "generated": 1,
+          "redeemed": 1
+        },
+        "currency": "USD",
+        "discount_cents": 130,
+        "gross_cents": 7794,
+        "net_cents": 7664,
+        "products": [
+          {
+            "product_id": "p1",
+            "quantity": 6
+          },
+          {
+            "product_id": "p2",
+            "quantity": 0
+          },
+          {
+            "product_id": "p3",
+            "quantity": 0
+          },
+          {
+            "product_id": "p4",
+            "quantity": 0
+          },
+          {
+            "product_id": "p5",
+            "quantity": 0
+          }
+        ],
+        "successful_orders": 6
+      },
+      "headers": " content-length: 328  content-type: application/json  date: Mon,19 Oct 2026 21:35:12 GMT  server: uvicorn  x-request-id: 539e744a-9c30-4294-bc8e-ef7a83ef017c ",
+      "status": 200
+    }
+  ]
+}
