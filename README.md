@@ -1,5 +1,7 @@
 # Checkout and Rewards Service
 
+Submission repository: [01vineetkumar/uniblox-checkout-rewards](https://github.com/01vineetkumar/uniblox-checkout-rewards).
+
 A persistent ecommerce backend built with Python 3.12+, FastAPI, and SQLite.
 It implements the [original assignment](ASSIGNMENT.md) and matches the Uniblox
 role's Python, REST API, SQL, testing, logging, and CI/CD interests.
@@ -116,8 +118,9 @@ the demo defaults to loopback and should only be exposed with access control.
 Production evolution and other intentional deferrals are documented in `DECISIONS.md`.
 
 The repository includes separate implementation, test, and documentation commits,
-prepared after the completed work was reviewed and verified. No remote push or
-public deployment has been performed. The original assignment text is in
+prepared after the completed work was reviewed and verified. The project is
+published in the public repository linked above; no application deployment has
+been performed. The original assignment text is in
 `ASSIGNMENT.md`. Local databases, environments, and caches are excluded from Git;
 evaluation starts with fresh seed data after setup.
 

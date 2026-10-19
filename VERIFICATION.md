@@ -79,13 +79,15 @@ equivalence, and actual process death immediately before and after checkout comm
 | Repeatable setup and run | Pinned requirements and README commands | Fresh-environment installation, launch, health, full suite and real HTTP verification |
 | API documentation | API.md plus typed OpenAPI and Swagger | Schema tests; real-server checks; browser rendering; executed PowerShell example |
 | Design rationale and AI use | DECISIONS.md | Explicit invariants, 10 decision records, deferrals, scale strategy, corrections |
-| Repository history | Separate implementation, test, and documentation commits | Grouped after review and verification, as authorized; no push performed |
+| Repository history | Separate implementation, test, and documentation commits | Grouped after review and verification, then pushed to the public submission repository as authorized |
 
 ## Scope of evidence
 
 The Python 3.12 Windows run is complete. A GitHub Actions workflow is supplied for
-Python 3.12 and 3.13 on Linux; hosted CI has not been run because nothing has been
-pushed. No production deployment or external service is required or configured.
+Python 3.12 and 3.13 on Linux. After publication, hosted run status is available
+on the [Actions page](https://github.com/01vineetkumar/uniblox-checkout-rewards/actions).
+The local results above are independent of hosted CI; no hosted result is implied
+unless explicitly recorded. No production deployment or external service is required.
 No separate frontend is included. `/docs` and `/openapi.json` are tested through
 HTTP. Initial browser documentation inspection used an isolated live server, which
 was stopped after the audit. A subsequent complete flow was executed using
@@ -97,9 +99,9 @@ Local database files are excluded from the submission; fresh checkouts start wit
 the original product inventory and no orders or coupons.
 
 All required backend behavior and documentation are implemented and verified in
-the scenarios above. Local commits package the verified work for submission;
-remote repository sharing and hosted CI remain pending because no push is authorized.
-No deployment was performed. AI ownership and the submitter's ability to explain
+the scenarios above. The verified commits are published in the
+[public submission repository](https://github.com/01vineetkumar/uniblox-checkout-rewards).
+No application deployment was performed. AI ownership and the submitter's ability to explain
 the design require human review, not an automated test result.
 
 Tests demonstrate the listed scenarios. They do not prove the absence of every

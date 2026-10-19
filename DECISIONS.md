@@ -325,8 +325,10 @@ Commits were deferred during implementation at the user's request. After the
 automated audit and complete Swagger flow were verified, the completed work was
 grouped into separate implementation, automated verification, and submission
 documentation commits. These group the reviewed work by concern; they do not
-claim to reconstruct the original development timeline. Remote publishing and
-deployment have not been performed.
+claim to reconstruct the original development timeline. After explicit user
+authorization, the commits were pushed to the public submission repository:
+[01vineetkumar/uniblox-checkout-rewards](https://github.com/01vineetkumar/uniblox-checkout-rewards).
+No application deployment has been performed.
 
 ## Follow-up requirement audit
 
